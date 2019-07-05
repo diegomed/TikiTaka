@@ -1,0 +1,20 @@
+<ActionBar title="Home" class="action-bar">
+</ActionBar>
+
+<StackLayout class="page"> 
+    <Mapbox
+        #map
+        accessToken="pk.eyJ1IjoiZGllZ29tZWQiLCJhIjoiY2p4M3M5bmg3MDFsdjN6bnF4b3Q3NXZwZSJ9.mI4aBrv4jDMBCtQGRbbIyQ"
+        mapStyle="mapbox://styles/diegomed/cjx7s1ya313a01cpwkwp1ar3j"
+        latitude="-6.21462"
+        longitude="106.84513"
+        hideCompass="true"
+        zoomLevel="14"
+        showUserLocation="true"
+        disableZoom="false"
+        disableRotation="false"
+        disableScroll="false"
+        disableTilt="false"
+        (mapReady)="onMapReady($event)">
+    </Mapbox>
+</StackLayout>
